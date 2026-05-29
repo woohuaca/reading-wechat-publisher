@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reading Social Publisher"
+  short_description: "Coordinate book notes, Guizang visuals, WeChat drafts, and Rednote drafts"
+  default_prompt: "Use $reading-social-publisher to turn this book into a WeChat and Xiaohongshu-ready social package."

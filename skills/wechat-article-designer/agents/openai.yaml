@@ -1,0 +1,4 @@
+interface:
+  display_name: "WeChat Article Designer"
+  short_description: "Format reading notes into WeChat-friendly longform articles"
+  default_prompt: "Use $wechat-article-designer to format a markdown note for WeChat."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reading Strategy"
+  short_description: "Analyze books into structured notes and insight maps"
+  default_prompt: "Use $reading-strategy to analyze a book into a structured note."

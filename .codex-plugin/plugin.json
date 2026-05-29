@@ -1,0 +1,45 @@
+{
+  "name": "reading-wechat-publisher",
+  "version": "0.1.0",
+  "description": "Turn books into structured notes, Guizang-style social assets, WeChat drafts, and Xiaohongshu-ready packages.",
+  "author": {
+    "name": "Local Workspace",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "",
+  "repository": "",
+  "license": "UNLICENSED",
+  "keywords": [
+    "reading-notes",
+    "wechat",
+    "publishing",
+    "xiaohongshu",
+    "rednote",
+    "social-cards"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Reading Social Publisher",
+    "shortDescription": "Book-note workflow for WeChat and Xiaohongshu drafts",
+    "longDescription": "Analyze a book, shape it into a WeChat article, generate Guizang-style visual packages, and prepare WeChat or Xiaohongshu draft outputs with the bundled workflow.",
+    "developerName": "Local Workspace",
+    "category": "Writing",
+    "capabilities": [
+      "Write",
+      "Design",
+      "Publish",
+      "Interactive"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Use $reading-social-publisher to turn this book into a WeChat and Xiaohongshu-ready social package.",
+      "Use $reading-strategy to analyze a book into a structured markdown note.",
+      "Use $wechat-article-designer to turn my note into a WeChat-ready article with Guizang-style visuals.",
+      "Use $wechat-publisher to upload assets and send the approved article to WeChat draft."
+    ],
+    "brandColor": "#0F766E"
+  }
+}
