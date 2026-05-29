@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "description": "Turn books into structured notes, Guizang-style social assets, WeChat drafts, and Xiaohongshu-ready packages.",
   "author": {
-    "name": "Local Workspace",
+    "name": "woohuaca",
     "email": "",
-    "url": ""
+    "url": "https://github.com/woohuaca"
   },
-  "homepage": "",
-  "repository": "",
+  "homepage": "https://github.com/woohuaca/reading-wechat-publisher",
+  "repository": "https://github.com/woohuaca/reading-wechat-publisher",
   "license": "UNLICENSED",
   "keywords": [
     "reading-notes",
@@ -23,7 +23,7 @@
     "displayName": "Reading Social Publisher",
     "shortDescription": "Book-note workflow for WeChat and Xiaohongshu drafts",
     "longDescription": "Analyze a book, shape it into a WeChat article, generate Guizang-style visual packages, and prepare WeChat or Xiaohongshu draft outputs with the bundled workflow.",
-    "developerName": "Local Workspace",
+    "developerName": "woohuaca",
     "category": "Writing",
     "capabilities": [
       "Write",
@@ -31,7 +31,7 @@
       "Publish",
       "Interactive"
     ],
-    "websiteURL": "",
+    "websiteURL": "https://github.com/woohuaca/reading-wechat-publisher",
     "privacyPolicyURL": "",
     "termsOfServiceURL": "",
     "defaultPrompt": [
