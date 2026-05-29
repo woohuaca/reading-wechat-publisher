@@ -2,6 +2,10 @@
 
 `reading-wechat-publisher` is a Codex plugin for turning books into structured notes, Guizang-style social assets, WeChat Official Account drafts, and Xiaohongshu / Rednote draft packages.
 
+[![GitHub release](https://img.shields.io/github/v/release/woohuaca/reading-wechat-publisher)](https://github.com/woohuaca/reading-wechat-publisher/releases)
+[![GitHub repo size](https://img.shields.io/github/repo-size/woohuaca/reading-wechat-publisher)](https://github.com/woohuaca/reading-wechat-publisher)
+[![Status](https://img.shields.io/badge/status-early%20workflow-teal)](https://github.com/woohuaca/reading-wechat-publisher)
+
 It is designed for a practical publishing workflow:
 
 - analyze a book honestly from the available source material
@@ -9,6 +13,20 @@ It is designed for a practical publishing workflow:
 - generate stronger covers and cards through Guizang-style visual packaging
 - create a WeChat draft
 - prepare a Xiaohongshu / Rednote draft package with browser-assisted follow-through
+
+## Who This Is For
+
+This plugin is aimed at people who want a repeatable publishing workflow for:
+
+- book notes and reading commentary
+- WeChat Official Account longform
+- Xiaohongshu / Rednote image-post drafts
+- stronger social card packaging through Guizang-style layouts
+
+It is especially useful when the same source note needs to become both:
+
+- a structured longform article
+- a shorter, more visual carousel-style post
 
 ## What This Plugin Does
 
@@ -50,6 +68,14 @@ structured note
 -> browser-assisted draft flow
 ```
 
+## Requirements
+
+- Codex with local plugin / skill support
+- Python 3 for the bundled publishing scripts
+- a WeChat Official Account with usable API credentials if WeChat draft publishing is in scope
+- `guizang-social-card-skill` when stronger covers or cards are needed
+- browser login for Xiaohongshu / Rednote draft continuation
+
 ## Repository Layout
 
 ```text
@@ -70,6 +96,19 @@ skills/
 - `scripts/publish_wechat_article.py`
 - `scripts/wechat_common.py`
 
+## Installation
+
+This repository is the source repository for the plugin.
+
+Typical local setup:
+
+1. Clone this repository.
+2. Place or link the folder where your Codex local plugins are loaded from.
+3. Make sure the `.codex-plugin/plugin.json` file stays at the repository root.
+4. Fill `.env` from `.env.example` if you plan to publish WeChat drafts.
+
+If you are only using the reading and layout parts, you can skip WeChat credentials until publish time.
+
 ## Current Publish Model
 
 - `WeChat`: `draft-only` by default
@@ -88,6 +127,11 @@ Copy `.env.example` to `.env` and fill:
 - `WECHAT_DEFAULT_AUTHOR`
 - optional `WECHAT_DEFAULT_CONTENT_SOURCE_URL`
 
+Also supported:
+
+- `WECHAT_OPEN_COMMENT`
+- `WECHAT_ONLY_FANS_CAN_COMMENT`
+
 ## Quick Start
 
 Example prompts:
@@ -96,6 +140,21 @@ Example prompts:
 - `Use $wechat-article-designer to turn this note into a WeChat-ready article.`
 - `Use $wechat-publisher to preview and create a WeChat draft.`
 - `Use $reading-social-publisher to turn this book into a WeChat and Xiaohongshu-ready social package.`
+
+## Channel Boundaries
+
+### WeChat
+
+- best supported channel today
+- local preview and preflight are included
+- default finish state is draft creation
+
+### Xiaohongshu / Rednote
+
+- supported as a draft workflow
+- image sets and captions can be prepared locally
+- browser automation can continue after upload
+- one manual image-upload step is still required
 
 ## Status
 
