@@ -2,6 +2,8 @@
 
 Use this note when `wechat-article-designer` needs higher visual quality.
 
+Default policy: knowledge cards are now Guizang-first by default. This is not just a premium option. If the workflow includes one or more knowledge cards, start from Guizang unless there is a concrete blocker.
+
 ## When To Route Through Guizang
 
 Prefer `guizang-social-card-skill` when any of the following is true:
@@ -11,6 +13,7 @@ Prefer `guizang-social-card-skill` when any of the following is true:
 - the content benefits from a `Swiss` or `Editorial Magazine x E-ink` visual system
 - the article needs a proper WeChat cover pair: `21:9` main cover plus `1:1` square cover
 - the article includes screenshots, data views, concept cards, or should feel more magazine-like
+- the article needs knowledge cards at all
 
 ## What To Produce
 
@@ -19,6 +22,8 @@ For WeChat-oriented article packages, the preferred output is:
 1. One `21:9` main cover for publication.
 2. One `1:1` square cover for visual checking and cross-platform reuse.
 3. One to two knowledge cards that carry a real argument, not decorative filler.
+
+For future runs, treat item `3` as standard output whenever a WeChat article calls for cards.
 
 ## Decision Rule
 
@@ -42,3 +47,4 @@ Do not keep re-asking later. Accept the user's choice and proceed.
 - Today, the WeChat publisher script still uploads one main cover image. The `1:1` square cover is kept for review, reuse, and future channels.
 - Keep all generated assets local so the publisher script can upload them.
 - Use one coherent visual system across cover and cards; avoid a magazine cover with unrelated plain cards.
+- Do not silently fall back to local plain-card generators for normal delivery. If fallback is necessary, say so explicitly in the work log or user update.

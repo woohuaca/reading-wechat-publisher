@@ -12,8 +12,6 @@ need_open_comment: true
 only_fans_can_comment: false
 ---
 
-# 给公众号读者的文章标题
-
 ![封面图](./assets/cover.jpg)
 
 ## 开头

@@ -1,6 +1,6 @@
 {
   "name": "reading-wechat-publisher",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Turn books into structured notes, Guizang-style social assets, WeChat drafts, and Xiaohongshu-ready packages.",
   "author": {
     "name": "woohuaca",

@@ -14,6 +14,13 @@ It is designed for a practical publishing workflow:
 - create a WeChat draft
 - prepare a Xiaohongshu / Rednote draft package with browser-assisted follow-through
 
+## What's New In v0.2.0
+
+- Guizang-style covers and knowledge cards are now the default visual path, not an optional afterthought.
+- WeChat longform defaults now avoid repeating the article title as the first body heading.
+- WeChat formal publish has been validated in a live run when the account has a working `AppID`, `AppSecret`, permissions, and IP whitelist.
+- the companion workspace flow for a daily `06:30` reading-and-publish run has been documented and exercised.
+
 ## Who This Is For
 
 This plugin is aimed at people who want a repeatable publishing workflow for:
@@ -111,7 +118,7 @@ If you are only using the reading and layout parts, you can skip WeChat credenti
 
 ## Current Publish Model
 
-- `WeChat`: `draft-only` by default
+- `WeChat`: `draft-first`, with formal publish supported after credentials and account conditions are validated
 - `Xiaohongshu / Rednote`: browser-assisted `draft-only`
 
 Current boundary:
@@ -165,6 +172,7 @@ What is stable today:
 - source-mode separation
 - WeChat article packaging
 - WeChat draft creation
+- WeChat formal publish after account validation
 - Guizang-guided visual packaging
 
 What is still partly manual:

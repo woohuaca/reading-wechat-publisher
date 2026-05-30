@@ -36,6 +36,7 @@ This skill does not replace the existing specialist skills. It decides which lan
      - 1-2 knowledge cards for longform
      - 9-15 Xiaohongshu cards when the user wants a carousel-style post
    - Keep all generated assets local.
+   - Default rule: if a longform article includes knowledge cards, assume Guizang is the primary generation path, not an optional enhancement.
 
 4. Prepare review artifacts before any publish action.
    - For WeChat: produce the publish-ready markdown plus local preview.
